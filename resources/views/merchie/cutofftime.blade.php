@@ -3,10 +3,11 @@
 
 <html>
 <head>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
     <link href="{{ asset('css/jquery.flexdatalist.min.css') }}" rel="stylesheet"  type='text/css'>
     <script src="{{ asset('js/jquery.flexdatalist.min.js') }}"></script>
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- ... -->
     <!-- DevExtreme themes -->
