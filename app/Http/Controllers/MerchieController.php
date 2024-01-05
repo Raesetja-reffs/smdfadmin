@@ -186,19 +186,19 @@ class MerchieController extends Controller
     }
 	
 	public function getSpecialsHeaders(Request $request){       
-        $headers = DB::connection('ecommerce')->select("select * from viewCustomerSpecialsToExport");
+        $headers = DB::connection('linxbriefcase')->select("select * from viewCustomerSpecialsToExport");
         return response()->json($headers);
     }
 
     public function getSpecialsLines(Request $request){
         $ID = $request->get('ID');
-		$lines= DB::connection('ecommerce')->select("Exec spCustomerSpecialLinesExport ?",array($ID));
+		$lines= DB::connection('linxbriefcase')->select("Exec spCustomerSpecialLinesExport ?",array($ID));
         return response()->json($lines);
     }
 	
 	public function exportToExcel(Request $request){
         $ID = $request->get('ID');
-		$lines= DB::connection('ecommerce')->select("Exec spExportExcelLines ?",array($ID));
+		$lines= DB::connection('linxbriefcase')->select("Exec spExportExcelLines ?",array($ID));
         return response()->json($lines);
     }
 	
