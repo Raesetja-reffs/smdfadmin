@@ -238,6 +238,10 @@
                                         });
                                     },
                                     columns: [
+                                        {
+                                            dataField: "placeholder",
+                                            caption: "placeholder",
+                                        },
 										{
                                             dataField: "strSpecialNotes",
                                             caption: "comment",
@@ -251,7 +255,7 @@
                                             dataField: "DateTo",
                                             caption: "To",
                                             dataType: "date",
-                                            format: 'dd-MM-yyyy',
+                                            format: 'yyyy-MM-dd',
                                         }, {
                                             dataField: "Price",
                                             caption: "Price",
@@ -265,7 +269,7 @@
                                             dataField: "DateFrom",
                                             caption: "From",
                                             dataType: "date",
-                                            format: 'dd-MM-yyyy',
+                                            format: 'yyyy-MM-dd',
                                         },  {
                                             dataField: "stockCode",
                                             caption: "Stock Code",
