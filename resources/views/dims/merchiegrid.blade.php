@@ -3,17 +3,16 @@
 
 <html>
 <head>
-<script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
-    <link href="{{ asset('css/jquery.flexdatalist.min.css') }}" rel="stylesheet"  type='text/css'>
-    <script src="{{ asset('js/jquery.flexdatalist.min.js') }}"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-flexdatalist/2.3.0/jquery.flexdatalist.min.css" rel="stylesheet"  type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-flexdatalist/2.3.0/jquery.flexdatalist.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- ... -->
     <!-- DevExtreme themes -->
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.7/css/dx.common.css">
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.7/css/dx.light.css">
-
-    <link rel="stylesheet" href="{{ asset('css/jquery-ui2.min.css') }}" type="text/css" />
-    <script src="{{ asset('js/jquery-ui.js') }}"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" type="text/css" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- DevExtreme library -->
     <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.1.7/js/dx.all.js"></script>
 
